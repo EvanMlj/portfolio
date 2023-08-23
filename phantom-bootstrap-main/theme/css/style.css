@@ -1304,7 +1304,7 @@ label {
     height: auto;
   }
   .pt-table,
-.pt-tablecell {
+  .pt-tablecell {
     display: block;
   }
   .page-title {
@@ -1324,8 +1324,8 @@ label {
     margin-left: auto;
   }
   .page-home .hexagon-item:nth-last-child(1),
-.page-home .hexagon-item:nth-last-child(2),
-.page-home .hexagon-item:nth-last-child(3) {
+  .page-home .hexagon-item:nth-last-child(2),
+  .page-home .hexagon-item:nth-last-child(3) {
     transform: rotate(30deg) translate(0px, 0px);
   }
   .author-image-large {
