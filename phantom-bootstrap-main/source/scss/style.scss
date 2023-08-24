@@ -303,18 +303,6 @@
     display: table-cell;
     vertical-align: middle;
   }
-  .history-icon {
-    padding-right: 25px;
-    position: relative;
-    width: 66px;
-    i {
-      font-size: 18px;
-      position: absolute;
-      top: 50%;
-      @include calc(left, "50% - 12.5px");
-      transform: translate(-50%, -50%);
-    }
-  }
   h5 {
     color: $light;
     font-size: 16px;

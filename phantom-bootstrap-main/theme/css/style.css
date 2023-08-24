@@ -379,9 +379,7 @@ label {
 .page-home .hexagon-item:nth-last-child(1),
 .page-home .hexagon-item:nth-last-child(2),
 .page-home .hexagon-item:nth-last-child(3) {
-  transform: rotate(30deg) 
-  /* translate(87px, -80px) */
-  ;
+  transform: rotate(30deg) translate(87px, -80px);
 }
 
 .hex-item {
@@ -661,18 +659,6 @@ label {
 .history-item > * {
   display: table-cell;
   vertical-align: middle;
-}
-.history-item .history-icon {
-  padding-right: 25px;
-  position: relative;
-  width: 66px;
-}
-.history-item .history-icon i {
-  font-size: 18px;
-  position: absolute;
-  top: 50%;
-  left: calc(50% - 12.5px);
-  transform: translate(-50%, -50%);
 }
 .history-item h5 {
   color: #fff;
