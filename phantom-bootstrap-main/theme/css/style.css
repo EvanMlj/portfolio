@@ -381,8 +381,7 @@ label {
 .page-home .hexagon-item:nth-last-child(1),
 .page-home .hexagon-item:nth-last-child(2),
 .page-home .hexagon-item:nth-last-child(3) {
-  transform: rotate(30deg) 
-  translate(87px, -80px);
+  transform: rotate(30deg) ;
 }
 
 .hex-item {
