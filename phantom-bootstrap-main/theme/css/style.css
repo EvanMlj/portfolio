@@ -203,7 +203,7 @@ label {
   display: none;
 }
 
-.loading-mask {
+/* .loading-mask {
   background-color: #fa6862;
   height: 100%;
   left: 0;
@@ -227,7 +227,7 @@ label {
 .loading-mask:nth-child(5) {
   left: 80%;
   transition-delay: 0.4s;
-}
+} */
 
 .preloader.active.done {
   z-index: 0;
@@ -240,39 +240,39 @@ label {
 	Start Styling
 -------------------------------------------------*/
 .site-wrapper {
-  border-top: 4px solid #fa6862;
+  border-top: 0.25rem solid #fa6862;
 }
 
 .page-close {
-  font-size: 30px;
+  font-size: 1.875rem;
   position: absolute;
-  right: 30px;
-  top: 30px;
+  right: 1.875rem;
+  top: 1.875rem;
   z-index: 100;
 }
 
 .page-title {
-  margin-bottom: 75px;
+  margin-bottom: 4.6875rem;
 }
 .page-title img {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .page-title h2 {
-  font-size: 68px;
-  margin-bottom: 25px;
+  font-size: 4.25rem;
+  margin-bottom: 1.5625rem;
   position: relative;
   z-index: 0;
   font-weight: 900;
   text-transform: uppercase;
 }
 .page-title p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 .page-title .title-bg {
   color: rgba(30, 37, 48, 0.07);
-  font-size: 158px;
+  font-size: 9.875rem;
   left: 0;
-  letter-spacing: 10px;
+  letter-spacing: 0.625rem;
   line-height: 0.7;
   position: absolute;
   right: 0;
@@ -282,7 +282,7 @@ label {
 }
 
 .section-title {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   overflow: hidden;
 }
 .section-title h3 {
@@ -291,19 +291,19 @@ label {
 }
 .section-title h3::before, .section-title h3::after {
   content: "";
-  height: 2px;
+  height: 0.125rem;
   position: absolute;
-  bottom: 8px;
-  left: calc(100% + 14px);
+  bottom: 0.5rem;
+  left: calc(100% + 0.875rem);
 }
 .section-title h3::before {
   background-color: #1e2530;
-  width: 96px;
-  bottom: 14px;
+  width: 6rem;
+  bottom: 0.875rem;
 }
 .section-title h3::after {
   background-color: #fa6862;
-  width: 73px;
+  width: 4.5625rem;
 }
 .section-title.light h3 {
   color: #fff;
@@ -313,14 +313,14 @@ label {
 }
 
 .page-nav {
-  bottom: 40px;
+  bottom: 2.5rem;
   left: 0;
   position: absolute;
   right: 0;
 }
 .page-nav span {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.3;
   text-transform: uppercase;
@@ -379,7 +379,7 @@ label {
 .page-home .hexagon-item:nth-last-child(1),
 .page-home .hexagon-item:nth-last-child(2),
 .page-home .hexagon-item:nth-last-child(3) {
-  transform: rotate(30deg) translate(87px, -80px);
+  transform: rotate(30deg);
 }
 
 .hex-item {
