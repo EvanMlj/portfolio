@@ -15,32 +15,32 @@
   }
 }
 
-.loading-mask {
-  background-color: $primary-color;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 20%;
-  @include transition(all 0.6s cubic-bezier(0.61, 0, 0.6, 1) 0s);
+// .loading-mask {
+//   background-color: $primary-color;
+//   height: 100%;
+//   left: 0;
+//   position: absolute;
+//   top: 0;
+//   width: 20%;
+//   @include transition(all 0.6s cubic-bezier(0.61, 0, 0.6, 1) 0s);
 
-  &:nth-child(2) {
-    left: 20%;
-    @include transition-delay(0.1s);
-  }
-  &:nth-child(3) {
-    left: 40%;
-    @include transition-delay(0.2s);
-  }
-  &:nth-child(4) {
-    left: 60%;
-    @include transition-delay(0.3s);
-  }
-  &:nth-child(5) {
-    left: 80%;
-    @include transition-delay(0.4s);
-  }
-}
+//   &:nth-child(2) {
+//     left: 20%;
+//     @include transition-delay(0.1s);
+//   }
+//   &:nth-child(3) {
+//     left: 40%;
+//     @include transition-delay(0.2s);
+//   }
+//   &:nth-child(4) {
+//     left: 60%;
+//     @include transition-delay(0.3s);
+//   }
+//   &:nth-child(5) {
+//     left: 80%;
+//     @include transition-delay(0.4s);
+//   }
+// }
 
 .preloader.active {
   &.done {
@@ -402,8 +402,8 @@
   }
 }
 
-// testimonials
-//--------------------------------------
+// // testimonials
+// //--------------------------------------
 
 .testimonials {
   .item {
