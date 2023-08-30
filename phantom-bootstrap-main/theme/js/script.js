@@ -135,6 +135,15 @@
 	/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 		Switch Dark/Light Mode 
 	-=-=-=-=-=-=-=-=-=--=-=-=-=-=-*/
+	document.addEventListener('DOMContentLoaded', () => {
+		const theme = localStorage.getItem('theme');
+		if (theme === 'sombre') {
+		  document.body.classList.add('dark');
+		} 
+	  });
+	  
+	
+
 	let darkButton = document.querySelector(".cdarkSwitch") ;
 	const themeText = document.querySelector('.darkOrLight'); 
 
@@ -145,8 +154,10 @@
 
 			if (document.body.classList.contains('dark')) {
 				themeText.textContent = 'light';
+				localStorage.setItem('theme', 'sombre');
 			} else {
 				themeText.textContent = 'dark';
+				localStorage.setItem('theme', 'clair');
 			}
 	}); 
 
