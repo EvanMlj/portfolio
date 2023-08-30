@@ -64,4 +64,8 @@
 .service-hex:hover .st1 {
   fill: #02B7CE;
 }
+
+.filterByColorTheme {
+  filter: contrast(60%) hue-rotate(211deg) saturate(230%);
+}
 /*# sourceMappingURL=blue.css.map */

@@ -1057,7 +1057,7 @@ label {
   right: 0px;
   position: fixed;
   top: 100px;
-  width: 260px;
+  width: 150px;
   z-index: 1200;
   transition: all 0.4s ease-in-out 0s;
   transform: translateX(100%);

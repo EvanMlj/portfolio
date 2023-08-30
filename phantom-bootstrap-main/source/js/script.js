@@ -106,7 +106,7 @@
 			return false;
 		});
 		if ($(window).width() < 768 ) {            
-			//$(".preview-wrapper").removeClass("extend");
+			$(".preview-wrapper").removeClass("extend");
 		}
 		$(".color-options li").on("click", function(){			
 			$("#color-changer").attr({
