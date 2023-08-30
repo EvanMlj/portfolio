@@ -898,20 +898,15 @@ label {
 }
 .contact-block .media-body {
   padding-left: 30px;
-  max-width: 250px;
-
 }
 .contact-block h4 {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
-  max-width: 250px;
 }
 .contact-block p {
   font-weight: 400;
   font-size: 15px;
-  max-width: 250px;
-
 }
 
 .contact-social {
@@ -1184,8 +1179,6 @@ label {
   height: 100%;
 }
 
-
-
 /*------------------------------------------------
 	Responsive Media Queries
 -------------------------------------------------*/
@@ -1407,4 +1400,3 @@ label {
   border-color: #1e2530;
 }
 /*# sourceMappingURL=style.css.map */
-
