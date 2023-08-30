@@ -598,6 +598,23 @@ label {
   transform: translate(-50%, -50%) scale(1);
 }
 
+.ctnWorkDetail {
+  display: none;
+  background-color: rgba(30, 37, 48, 0.96);
+  color: #fa6862;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px;
+}
+.ctnWorkDetail h4 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.ctnWorkDetail p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+
 .history-block {
   background-color: #1e2530;
   position: relative;

@@ -266,6 +266,26 @@
   }
 }
 
+.ctnWorkDetail {
+  display: none;
+  background-color: rgba(30, 37, 48, 0.96);
+  color: $primary-color ; 
+  font-family: $open-sans;
+  padding: 10px;
+
+  h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $light;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+}
+
 // history/ resume
 
 .history-block {
