@@ -132,4 +132,22 @@
 		}, 1000);
 	});
 
+	/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+		Switch Dark/Light Mode 
+	-=-=-=-=-=-=-=-=-=--=-=-=-=-=-*/
+	let darkButton = document.querySelector(".cdarkSwitch") ;
+	const themeText = document.querySelector('.darkOrLight'); 
+
+	darkButton.addEventListener("click", function() {
+		document.body.classList.toggle('dark') ; 
+		darkButton.classList.toggle('clightSwitch');
+        darkButton.classList.toggle('cdarkSwitch');
+
+			if (document.body.classList.contains('dark')) {
+				themeText.textContent = 'light';
+			} else {
+				themeText.textContent = 'dark';
+			}
+	}); 
+
 })(jQuery);

@@ -1,5 +1,7 @@
 $light-dark: #1e2530;
 
+@include color-mode(dark) ; 
+
 .dark {
 	background-color: #0c0f15;
 

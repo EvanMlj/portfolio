@@ -792,8 +792,6 @@
 }
 .switcher-body {
   background-color: #ffffff;
-  height: -webkit-calc(100% - 50px);
-  height: calc(100% - 50px);
   left: 0;
   padding: 20px;
   position: fixed;
@@ -839,6 +837,13 @@
 }
 .color-options li.c3 {
   background-color: #dabfde;
+}
+.color-options li.cdarkSwitch {
+  background-color: #0c0f15;
+}
+.color-options li.clightSwitch {
+  background-color: whitesmoke;
+  border: #07080b solid 1px;
 }
 .pattern-options li {
   font-family: "Roboto", sans-serif;
