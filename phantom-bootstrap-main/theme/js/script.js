@@ -119,6 +119,7 @@
 			$("#color-changer").attr({
 				"href":"css/colors/"+$(this).attr("data-color")+".css"
 			});
+			localStorage.setItem('color-theme', $(this).attr("data-color")) ; 
 			return false;
 		});
 	}
@@ -140,6 +141,10 @@
 		if (theme === 'sombre') {
 		  document.body.classList.add('dark');
 		} 
+		const colortheme = localStorage.getItem('color-theme') || "lilas";
+		$("#color-changer").attr({
+			"href":"css/colors/"+colortheme+".css"
+		});
 	  });
 	  
 	
@@ -160,5 +165,12 @@
 				localStorage.setItem('theme', 'clair');
 			}
 	}); 
+
+
+	/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+		Store secondary theme 
+	-=-=-=-=-=-=-=-=-=--=-=-=-=-=-*/
+
+
 
 })(jQuery);
