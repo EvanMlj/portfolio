@@ -266,17 +266,72 @@
   }
 }
 
+
 .ctnWorkDetail {
   display: none;
+  flex-direction: column;
   background-color: rgba(30, 37, 48, 0.96);
   color: $primary-color ; 
   font-family: $open-sans;
-  padding: 10px;
+  padding: 2rem;
 
+  .ctnTitleWD{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    padding: 1rem;
+    border-bottom: 0.1875rem solid $primary-color;
   h4 {
-    font-weight: 700;
-    text-transform: uppercase;
+      font-weight: 700;
+      text-transform: uppercase;
+      max-width: 40%;
+      margin: 0;
+      align-items: normal;
+      
+    }
   }
+  ul {
+    display: flex;
+    flex-direction: column;
+    color: $light;
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 0 ;
+    list-style-type: none ; 
+    gap: 1rem;
+    text-align: center;
+  }
+
+  h5{
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1875rem solid $primary-color;
+  }
+
+  .ImgObjTechWrapper{
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 2rem 2rem 2rem;
+    gap: 3rem;
+
+    .ctnImgWD{
+      display: flex;
+      align-items: center;
+    }
+
+  }
+
+  .ctnLinksProjetct{
+
+    ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    
+  }
+
 
   p {
     color: $light;

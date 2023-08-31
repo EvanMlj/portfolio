@@ -17,7 +17,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $emailExpediteur = $_POST['email'] ; 
     $objet = $_POST['subject'] ; 
     $message = $_POST['message'] ; 
-    $header = "From: $emailExpediteur" ; 
+    $header = "From: $nomExpediteur <$emailExpediteur>" ; 
 
     $myEmail = "evan.ma.maljoku@gmail.com" ; 
     // recup var .env
