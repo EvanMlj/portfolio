@@ -132,14 +132,14 @@
 	document.addEventListener('DOMContentLoaded', () => {
 		const theme = localStorage.getItem('theme');
 		if (theme === 'sombre') {
-		  document.body.classList.add('dark');
+		document.body.classList.add('dark');
 		} 
 		const colortheme = localStorage.getItem('color-theme') || "lilas";
 		$("#color-changer").attr({
 			"href":"css/colors/"+colortheme+".css"
 		});
-	  });
-	  
+	});
+	
 	
 
 	let darkButton = document.querySelector(".cdarkSwitch") ;
@@ -164,6 +164,5 @@
 		Work details 
 	-=-=-=-=-=-=-=-=-=--=-=-=-=-=-*/
 	
-
 
 })(jQuery);
