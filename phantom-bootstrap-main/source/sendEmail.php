@@ -25,9 +25,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // utilisation d ela fonction mail() car compatible avec laragon 
     if(mail($myEmail, $objet, $message, $header)){
-        echo "Votre message a été envoyé avec succès." ;
+        echo "Votre email a été envoyé avec succès." ;
     } else {
-        "Une erreur est survenue lors de l'envoi du message." ;
+        "Une erreur est survenue lors de l'envoi de l'email." ;
     }
 }
 

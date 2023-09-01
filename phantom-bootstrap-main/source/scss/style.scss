@@ -270,7 +270,7 @@
 
 
 .ctnWorkDetail {
-  display: none;
+  display: flex;
   flex-direction: column;
   background-color: rgba(30, 37, 48, 0.96);
   color: $primary-color ; 

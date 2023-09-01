@@ -135,27 +135,31 @@
 				let projectImg = $(this).find("img").attr("src") ; 
 				let stacks = $(this).find("ul").text();
 				let objectifs = $(this).find("p.Objectifs").text();
-				let descripton = $(this).find("p.Description").text();
-				console.log(projectTitle + projectImg + stacks + objectifs + descripton); 
-				let workInfos = [projectTitle, projectImg, stacks, objectifs, descripton] ; 
-				return workInfos ;
+				let description = $(this).find("p.Description").text();
+				let workInfos = {
+					title: projectTitle,
+					imageSrc: projectImg,
+					stack: stacks,
+					objectives: objectifs,
+					description: description
+				};  
+
+				populateWorkDetail(workInfos) ;
+				
 		}) ;
 		}
 		getWorksInfos() ;
 
-		/*function ToggleWorkDetailVistibility
-		* display de base none
-		* return false
-		* si click sur work-item alors
-		* display devient flex
-		*/ 
-		function ToggleWorkDetailVistibility(){
-			$(".works-item").on("click", function(){
-				$(".ctnWorkDetail").toggle() ;
-				return false ; 
-			})
+		
+		function ToggleWorkDetail(){
+			let worksItem = $(".works-item") ;
+			worksItem.on("click", function(){
+				if (ctnWorkDetail.css("display") !== "flex") {
+					ctnWorkDetail.toggle();
+				}				
+			}) ;
 		}
-		ToggleWorkDetailVistibility();
+		ToggleWorkDetail();
 
 		/* fonction populateWorkDetail
 		* si getWorksInfos && workDetail display flex
@@ -164,11 +168,22 @@
 		*/
 
 		
-
+		function populateWorkDetail(workInfos){
+			if(workInfos){
+				$(".titleWD").text(workInfos.title) ;
+				$(".imgWorkDetail").attr({src: workInfos.imageSrc, width:"293.33"});
+				$(".stackWD").text(workInfos.stack);
+				$(".Objectifs").text(workInfos.objectives);
+				$(".descriptionWorkDetail").text(workInfos.description) ;
+			}
+		}
+		
+		populateWorkDetail();
 	
 	/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 		Switch Dark/Light Mode 
 	-=-=-=-=-=-=-=-=-=--=-=-=-=-=-*/
+
 	document.addEventListener('DOMContentLoaded', () => {
 		const theme = localStorage.getItem('theme');
 		if (theme === 'sombre') {
