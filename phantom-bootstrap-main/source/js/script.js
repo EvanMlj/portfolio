@@ -149,6 +149,13 @@
 		* si click sur work-item alors
 		* display devient flex
 		*/ 
+		function ToggleWorkDetailVistibility(){
+			$(".works-item").on("click", function(){
+				$(".ctnWorkDetail").toggle() ;
+				return false ; 
+			})
+		}
+		ToggleWorkDetailVistibility();
 
 		/* fonction populateWorkDetail
 		* si getWorksInfos && workDetail display flex
@@ -156,6 +163,7 @@
 		* assigne les infos dans workDetails
 		*/
 
+		
 
 	
 	/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

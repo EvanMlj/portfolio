@@ -603,7 +603,7 @@ label {
 }
 
 .ctnWorkDetail {
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: rgba(30, 37, 48, 0.96);
   color: #fa6862;
