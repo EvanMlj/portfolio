@@ -23,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     // recup var .env
     $mdp = $_ENV['MPD'] ; 
 
-        // utilisation d ela fonction mail() car compatible avec laragon 
+        // utilisation de la fonction mail() car compatible avec laragon 
     if(mail($myEmail, $objet, $message, $header)){
         echo "Votre email a été envoyé avec succès." ;
     } else {
