@@ -447,6 +447,37 @@ label {
   color: #fff;
 }
 
+/*------------------------------------------------
+    About Page
+-------------------------------------------------*/
+.about-author {
+  margin-bottom: 23px;
+  -moz-align-items: center;
+  align-items: center;
+  display: -moz-flex;
+  display: flex;
+}
+.about-author .author-thumb {
+  background-color: #fff;
+  border: 5px solid #1e2530;
+  margin-right: 30px;
+  padding: 5px;
+}
+.about-author .author-thumb img {
+  border: 2px solid #1e2530;
+  width: 145px;
+}
+.about-author .author-desc p {
+  color: #1e2530;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.about-author .author-desc b {
+  font-family: "Open Sans", sans-serif;
+}
+
 .progress {
   background-color: #1e2530;
   border-radius: 2px;
@@ -543,6 +574,10 @@ label {
   color: #fa6862;
   font-weight: 700;
   text-transform: uppercase;
+}
+.works-item h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 .works-item p {
   display: none;

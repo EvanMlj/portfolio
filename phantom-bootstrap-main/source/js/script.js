@@ -127,6 +127,38 @@
 	});
 
 	/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+		Work details 
+	-=-=-=-=-=-=-=-=-=--=-=-=-=-=-*/
+		function getWorksInfos () {
+			$(".works-item").on("click", function(){
+				let projectTitle = $(this).find("h4").text() ; 
+				let projectImg = $(this).find("img").attr("src") ; 
+				let stacks = $(this).find("ul").text();
+				let objectifs = $(this).find("p.Objectifs").text();
+				let descripton = $(this).find("p.Description").text();
+				console.log(projectTitle + projectImg + stacks + objectifs + descripton); 
+				let workInfos = [projectTitle, projectImg, stacks, objectifs, descripton] ; 
+				return workInfos ;
+		}) ;
+		}
+		getWorksInfos() ;
+
+		/*function ToggleWorkDetailVistibility
+		* display de base none
+		* return false
+		* si click sur work-item alors
+		* display devient flex
+		*/ 
+
+		/* fonction populateWorkDetail
+		* si getWorksInfos && workDetail display flex
+		* recupère workInfos 
+		* assigne les infos dans workDetails
+		*/
+
+
+	
+	/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 		Switch Dark/Light Mode 
 	-=-=-=-=-=-=-=-=-=--=-=-=-=-=-*/
 	document.addEventListener('DOMContentLoaded', () => {
@@ -159,10 +191,5 @@
 			}
 	}); 
 
-
-	/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-		Work details 
-	-=-=-=-=-=-=-=-=-=--=-=-=-=-=-*/
-	
 
 })(jQuery);

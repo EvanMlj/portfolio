@@ -2,6 +2,7 @@
 @import "mixins";
 @import "base";
 
+
 .preloader {
   bottom: 0;
   left: 0;
@@ -121,7 +122,7 @@
 // Home
 //
 @import "blocks/home";
-
+@import "blocks/about";
 
 // about
 .progress {
@@ -163,6 +164,9 @@
     @include transition(all 0.3s ease 0s);
   }
 }
+
+
+
 
 // Works
 
@@ -225,6 +229,11 @@
     color: $primary-color;
     font-weight: 700;
     text-transform: uppercase;
+  }
+
+  h4:hover {
+    text-decoration: underline;
+    cursor: pointer;
   }
 
   p {
