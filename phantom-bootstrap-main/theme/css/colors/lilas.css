@@ -64,4 +64,8 @@
 .service-hex:hover .st1 {
   fill: #dabfde;
 }
+
+.filterByColorTheme {
+  filter: hue-rotate(282deg) saturate(90%);
+}
 /*# sourceMappingURL=lilas.css.map */

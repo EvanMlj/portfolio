@@ -62,3 +62,7 @@ $primary-color: #dabfde;
 .service-hex:hover .st1 {
   	fill: $primary-color;
 }
+
+.filterByColorTheme{
+	filter: hue-rotate(282deg) saturate(90%);
+}

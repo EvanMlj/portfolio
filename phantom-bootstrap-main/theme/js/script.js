@@ -113,12 +113,13 @@
 			return false;
 		});
 		if ($(window).width() < 768 ) {            
-			//$(".preview-wrapper").removeClass("extend");
+			$(".preview-wrapper").removeClass("extend");
 		}
 		$(".color-options li").on("click", function(){			
 			$("#color-changer").attr({
 				"href":"css/colors/"+$(this).attr("data-color")+".css"
 			});
+			localStorage.setItem('color-theme', $(this).attr("data-color")) ; 
 			return false;
 		});
 	}
@@ -131,5 +132,94 @@
 			$(".preloader").addClass("done");
 		}, 1000);
 	});
+
+	/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+		Work details 
+	-=-=-=-=-=-=-=-=-=--=-=-=-=-=-*/
+		function getWorksInfos () {
+			$(".works-item").on("click", function(){
+				let projectTitle = $(this).find("h4").text() ; 
+				let projectImg = $(this).find("img").attr("src") ; 
+				let stacks = $(this).find("ul").text();
+				let objectifs = $(this).find("p.Objectifs").text();
+				let description = $(this).find("p.Description").text();
+				let workInfos = {
+					title: projectTitle,
+					imageSrc: projectImg,
+					stack: stacks,
+					objectives: objectifs,
+					description: description
+				};  
+
+				populateWorkDetail(workInfos) ;
+				
+		}) ;
+		}
+		getWorksInfos() ;
+
+		
+		function ToggleWorkDetail(){
+			let worksItem = $(".works-item") ;
+			worksItem.on("click", function(){
+				if (ctnWorkDetail.css("display") !== "flex") {
+					ctnWorkDetail.toggle();
+				}				
+			}) ;
+		}
+		ToggleWorkDetail();
+
+		/* fonction populateWorkDetail
+		* si getWorksInfos && workDetail display flex
+		* recupère workInfos 
+		* assigne les infos dans workDetails
+		*/
+
+		
+		function populateWorkDetail(workInfos){
+			if(workInfos){
+				$(".titleWD").text(workInfos.title) ;
+				$(".imgWorkDetail").attr({src: workInfos.imageSrc, width:"293.33"});
+				$(".stackWD").text(workInfos.stack);
+				$(".Objectifs").text(workInfos.objectives);
+				$(".descriptionWorkDetail").text(workInfos.description) ;
+			}
+		}
+		
+		populateWorkDetail();
+	
+	/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+		Switch Dark/Light Mode 
+	-=-=-=-=-=-=-=-=-=--=-=-=-=-=-*/
+
+	document.addEventListener('DOMContentLoaded', () => {
+		const theme = localStorage.getItem('theme');
+		if (theme === 'sombre') {
+		document.body.classList.add('dark');
+		} 
+		const colortheme = localStorage.getItem('color-theme') || "lilas";
+		$("#color-changer").attr({
+			"href":"css/colors/"+colortheme+".css"
+		});
+	});
+	
+	
+
+	let darkButton = document.querySelector(".cdarkSwitch") ;
+	const themeText = document.querySelector('.darkOrLight'); 
+
+	darkButton.addEventListener("click", function() {
+		document.body.classList.toggle('dark') ; 
+		darkButton.classList.toggle('clightSwitch');
+        darkButton.classList.toggle('cdarkSwitch');
+
+			if (document.body.classList.contains('dark')) {
+				themeText.textContent = 'light';
+				localStorage.setItem('theme', 'sombre');
+			} else {
+				themeText.textContent = 'dark';
+				localStorage.setItem('theme', 'clair');
+			}
+	}); 
+
 
 })(jQuery);

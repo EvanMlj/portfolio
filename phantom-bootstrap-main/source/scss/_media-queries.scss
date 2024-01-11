@@ -104,6 +104,22 @@
 			}
 		}
 	}
+
+	.ctnWorkDetail{
+		display: flex;
+		flex-direction: column;
+
+		.ImgObjTechWrapper{
+			display: flex;
+			flex-direction: column;
+
+			.ctnImgWD{
+				justify-content: center;
+			}
+		}
+
+
+	}
 }
 
 
@@ -243,6 +259,22 @@
 				margin: 20px 0;
 			}
 		}
+	}
+
+	.ctnWorkDetail{
+		display: flex;
+		flex-direction: column;
+
+		.ImgObjTechWrapper{
+			display: flex;
+			flex-direction: column;
+
+			.ctnImgWD{
+				justify-content: center;
+			}
+		}
+
+
 	}
 
 }
